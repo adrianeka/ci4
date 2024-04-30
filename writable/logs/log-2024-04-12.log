@@ -1,0 +1,113 @@
+CRITICAL - 2024-04-12 11:05:21 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Barang.php on line 50.
+ 1 APPPATH\Controllers\Barang.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\app\\Controllers\\Barang.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->store()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+ERROR - 2024-04-12 11:05:51 --> mysqli_sql_exception: Duplicate entry 'MOUSE' for key 'PRIMARY' in C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO bar...', 0)
+#1 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO bar...')
+#2 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO bar...')
+#3 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\app\Models\BarangModel.php(69): CodeIgniter\Database\BaseConnection->query('INSERT INTO bar...', Array)
+#4 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\app\Controllers\Barang.php(47): App\Models\BarangModel->createBarang('B005', 'MOUSE', '50000')
+#5 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\CodeIgniter.php(941): App\Controllers\Barang->store()
+#6 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#7 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\...')
+#10 {main}
+CRITICAL - 2024-04-12 11:05:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'MOUSE' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\BarangModel.php(69): CodeIgniter\Database\BaseConnection->query('INSERT INTO barang (kode, nama_brg, harga) VALUES (?, ?, ?)', [...])
+ 2 APPPATH\Controllers\Barang.php(47): App\Models\BarangModel->createBarang('B005', 'MOUSE', '50000')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->store()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-12 11:05:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'MOUSE' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO barang (kode, nama_brg, harga) VALUES (\'MOUSE\', \'B005\', \'50000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO barang (kode, nama_brg, harga) VALUES (\'MOUSE\', \'B005\', \'50000\')')
+ 3 APPPATH\Models\BarangModel.php(69): CodeIgniter\Database\BaseConnection->query('INSERT INTO barang (kode, nama_brg, harga) VALUES (?, ?, ?)', [...])
+ 4 APPPATH\Controllers\Barang.php(47): App\Models\BarangModel->createBarang('B005', 'MOUSE', '50000')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->store()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-12 11:05:51 --> [Caused by] mysqli_sql_exception: Duplicate entry 'MOUSE' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO barang (kode, nama_brg, harga) VALUES (\'MOUSE\', \'B005\', \'50000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO barang (kode, nama_brg, harga) VALUES (\'MOUSE\', \'B005\', \'50000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO barang (kode, nama_brg, harga) VALUES (\'MOUSE\', \'B005\', \'50000\')')
+ 4 APPPATH\Models\BarangModel.php(69): CodeIgniter\Database\BaseConnection->query('INSERT INTO barang (kode, nama_brg, harga) VALUES (?, ?, ?)', [...])
+ 5 APPPATH\Controllers\Barang.php(47): App\Models\BarangModel->createBarang('B005', 'MOUSE', '50000')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+ERROR - 2024-04-12 11:20:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM barang WHERE kode = 'B001'' at line 1 in C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT FROM bar...', 0)
+#1 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT FROM bar...')
+#2 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT FROM bar...')
+#3 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\app\Models\BarangModel.php(81): CodeIgniter\Database\BaseConnection->query('SELECT FROM bar...', Array)
+#4 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\app\Controllers\Barang.php(55): App\Models\BarangModel->findBarang('B001')
+#5 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\CodeIgniter.php(941): App\Controllers\Barang->edit('B001')
+#6 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#7 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\...')
+#10 {main}
+CRITICAL - 2024-04-12 11:20:31 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM barang WHERE kode = 'B001'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\BarangModel.php(81): CodeIgniter\Database\BaseConnection->query('SELECT FROM barang WHERE kode = ?', [...])
+ 2 APPPATH\Controllers\Barang.php(55): App\Models\BarangModel->findBarang('B001')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->edit('B001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-12 11:20:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM barang WHERE kode = 'B001'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT FROM barang WHERE kode = \'B001\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT FROM barang WHERE kode = \'B001\'')
+ 3 APPPATH\Models\BarangModel.php(81): CodeIgniter\Database\BaseConnection->query('SELECT FROM barang WHERE kode = ?', [...])
+ 4 APPPATH\Controllers\Barang.php(55): App\Models\BarangModel->findBarang('B001')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->edit('B001')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-12 11:20:31 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM barang WHERE kode = 'B001'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT FROM barang WHERE kode = \'B001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT FROM barang WHERE kode = \'B001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT FROM barang WHERE kode = \'B001\'')
+ 4 APPPATH\Models\BarangModel.php(81): CodeIgniter\Database\BaseConnection->query('SELECT FROM barang WHERE kode = ?', [...])
+ 5 APPPATH\Controllers\Barang.php(55): App\Models\BarangModel->findBarang('B001')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->edit('B001')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-12 11:21:23 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\update_data_brg.php on line 14.
+ 1 APPPATH\Views\update_data_brg.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\app\\Views\\update_data_brg.php', 14)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\app\\Views\\update_data_brg.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('update_data_brg', [], true)
+ 5 APPPATH\Controllers\Barang.php(57): view('update_data_brg', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->edit('B001')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-12 11:37:37 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 307.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

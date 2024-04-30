@@ -1,0 +1,140 @@
+CRITICAL - 2024-04-24 03:40:13 --> ArgumentCountError: Too few arguments to function App\Models\BarangModel::createBarang(), 3 passed in C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\app\Controllers\CBarang.php on line 46 and exactly 4 expected
+in APPPATH\Models\BarangModel.php on line 66.
+ 1 APPPATH\Controllers\CBarang.php(46): App\Models\BarangModel->createBarang('B005', 'MOUSE', '50000')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CBarang->store()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CBarang))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-24 03:43:54 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Models\BarangModel.php on line 70.
+ 1 APPPATH\Models\BarangModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\app\\Models\\BarangModel.php', 70)
+ 2 APPPATH\Controllers\CBarang.php(47): App\Models\BarangModel->createBarang('B005', 'MOUSE', '50000', null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CBarang->store()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CBarang))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-24 03:44:13 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Models\BarangModel.php on line 71.
+ 1 APPPATH\Models\BarangModel.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\app\\Models\\BarangModel.php', 71)
+ 2 APPPATH\Controllers\CBarang.php(47): App\Models\BarangModel->createBarang('B005', 'MOUSE', '50000', null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CBarang->store()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CBarang))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-24 03:44:32 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Models\BarangModel.php on line 71.
+ 1 APPPATH\Models\BarangModel.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\app\\Models\\BarangModel.php', 71)
+ 2 APPPATH\Controllers\CBarang.php(47): App\Models\BarangModel->createBarang('B005', 'MOUSE', '50000', null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CBarang->store()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CBarang))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-24 04:00:48 --> Error: Call to a member function isValid() on null
+in APPPATH\Controllers\CBarang.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CBarang->store()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CBarang))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-24 04:01:50 --> TypeError: Cannot access offset of type string on string
+in APPPATH\Models\BarangModel.php on line 70.
+ 1 APPPATH\Controllers\CBarang.php(59): App\Models\BarangModel->createBarang('B005', null, '50000', '1713931310_ad3d96261e5ad2982e03.png')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CBarang->store()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CBarang))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+ERROR - 2024-04-24 04:04:34 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO bar...', 0)
+#1 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO bar...')
+#2 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO bar...')
+#3 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\app\Models\BarangModel.php(69): CodeIgniter\Database\BaseConnection->query('INSERT INTO bar...', Array)
+#4 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\app\Controllers\CBarang.php(59): App\Models\BarangModel->createBarang('B005', NULL, '50000', '1713931473_8005...')
+#5 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\CodeIgniter.php(941): App\Controllers\CBarang->store()
+#6 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CBarang))
+#7 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\...')
+#10 {main}
+CRITICAL - 2024-04-24 04:04:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Column count doesn't match value count at row 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\BarangModel.php(69): CodeIgniter\Database\BaseConnection->query('INSERT INTO barang (kode, nama_brg, harga) VALUES (?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\CBarang.php(59): App\Models\BarangModel->createBarang('B005', null, '50000', '1713931473_8005f531631da334c88e.png')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CBarang->store()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CBarang))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-24 04:04:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column count doesn't match value count at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO barang (kode, nama_brg, harga) VALUES (\'B005\', NULL, \'50000\', \'1713931473_8005f531631da334c88e.png\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO barang (kode, nama_brg, harga) VALUES (\'B005\', NULL, \'50000\', \'1713931473_8005f531631da334c88e.png\')')
+ 3 APPPATH\Models\BarangModel.php(69): CodeIgniter\Database\BaseConnection->query('INSERT INTO barang (kode, nama_brg, harga) VALUES (?, ?, ?, ?)', [...])
+ 4 APPPATH\Controllers\CBarang.php(59): App\Models\BarangModel->createBarang('B005', null, '50000', '1713931473_8005f531631da334c88e.png')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CBarang->store()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CBarang))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-24 04:04:34 --> [Caused by] mysqli_sql_exception: Column count doesn't match value count at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO barang (kode, nama_brg, harga) VALUES (\'B005\', NULL, \'50000\', \'1713931473_8005f531631da334c88e.png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO barang (kode, nama_brg, harga) VALUES (\'B005\', NULL, \'50000\', \'1713931473_8005f531631da334c88e.png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO barang (kode, nama_brg, harga) VALUES (\'B005\', NULL, \'50000\', \'1713931473_8005f531631da334c88e.png\')')
+ 4 APPPATH\Models\BarangModel.php(69): CodeIgniter\Database\BaseConnection->query('INSERT INTO barang (kode, nama_brg, harga) VALUES (?, ?, ?, ?)', [...])
+ 5 APPPATH\Controllers\CBarang.php(59): App\Models\BarangModel->createBarang('B005', null, '50000', '1713931473_8005f531631da334c88e.png')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CBarang->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+ERROR - 2024-04-24 04:06:18 --> mysqli_sql_exception: Column 'nama_brg' cannot be null in C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO bar...', 0)
+#1 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO bar...')
+#2 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO bar...')
+#3 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\app\Models\BarangModel.php(69): CodeIgniter\Database\BaseConnection->query('INSERT INTO bar...', Array)
+#4 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\app\Controllers\CBarang.php(59): App\Models\BarangModel->createBarang('B005', NULL, '50000', '1713931578_48d4...')
+#5 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\CodeIgniter.php(941): App\Controllers\CBarang->store()
+#6 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CBarang))
+#7 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\adria\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-framework-7d393f8\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\...')
+#10 {main}
+CRITICAL - 2024-04-24 04:06:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nama_brg' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\BarangModel.php(69): CodeIgniter\Database\BaseConnection->query('INSERT INTO barang (kode, nama_brg, harga, foto) VALUES (?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\CBarang.php(59): App\Models\BarangModel->createBarang('B005', null, '50000', '1713931578_48d4e2968503b41032a1.png')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CBarang->store()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CBarang))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-24 04:06:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nama_brg' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO barang (kode, nama_brg, harga, foto) VALUES (\'B005\', NULL, \'50000\', \'1713931578_48d4e2968503b41032a1.png\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO barang (kode, nama_brg, harga, foto) VALUES (\'B005\', NULL, \'50000\', \'1713931578_48d4e2968503b41032a1.png\')')
+ 3 APPPATH\Models\BarangModel.php(69): CodeIgniter\Database\BaseConnection->query('INSERT INTO barang (kode, nama_brg, harga, foto) VALUES (?, ?, ?, ?)', [...])
+ 4 APPPATH\Controllers\CBarang.php(59): App\Models\BarangModel->createBarang('B005', null, '50000', '1713931578_48d4e2968503b41032a1.png')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CBarang->store()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CBarang))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
+CRITICAL - 2024-04-24 04:06:18 --> [Caused by] mysqli_sql_exception: Column 'nama_brg' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO barang (kode, nama_brg, harga, foto) VALUES (\'B005\', NULL, \'50000\', \'1713931578_48d4e2968503b41032a1.png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO barang (kode, nama_brg, harga, foto) VALUES (\'B005\', NULL, \'50000\', \'1713931578_48d4e2968503b41032a1.png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO barang (kode, nama_brg, harga, foto) VALUES (\'B005\', NULL, \'50000\', \'1713931578_48d4e2968503b41032a1.png\')')
+ 4 APPPATH\Models\BarangModel.php(69): CodeIgniter\Database\BaseConnection->query('INSERT INTO barang (kode, nama_brg, harga, foto) VALUES (?, ?, ?, ?)', [...])
+ 5 APPPATH\Controllers\CBarang.php(59): App\Models\BarangModel->createBarang('B005', null, '50000', '1713931578_48d4e2968503b41032a1.png')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CBarang->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\adria\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-framework-7d393f8\\public\\index.php')
